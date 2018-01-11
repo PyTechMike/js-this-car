@@ -1,0 +1,28 @@
+{
+	"name": "frontend-js-car",
+	"private": true,
+	"description": "Create a car object",
+	"author": "Constantine Genchevsky <const.gen@gmail.com>",
+	"version": "2.2.0",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "neutrino start",
+		"build": "neutrino build",
+		"test": "neutrino test --watch",
+		"coverage": "neutrino test --coverage",
+		"lint": "eslint --ext .js src/"
+	},
+	"neutrino": {
+		"use": [
+			"neutrino-preset-fabrika"
+		]
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"neutrino-preset-fabrika": "^1.1.0"
+	},
+	"engines": {
+		"node": ">=6.9.0",
+		"npm": ">=3.0.0"
+	}
+}
