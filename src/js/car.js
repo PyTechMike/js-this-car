@@ -7,8 +7,9 @@ const car = {
 	seats: 4,
 	passengers: [],
 	put() {
-		// if (this.seats > this.passengers.length) {
-		this.passengers.push(1);
+		if (this.seats > this.passengers.length) {
+			this.passengers.push(2);
+		}
 	},
 	land() {
 
