@@ -13,6 +13,9 @@ const car = {
 	},
 	land() {
 		this.passengers.shift(2);
+		if (this.passengers.length === 0) {
+			this.speed = 0;
+		}
 	},
 	drive(newSpeed) {
 		if (this.passengers.length > 0) {
@@ -23,9 +26,6 @@ const car = {
 			} else {
 				this.speed = newSpeed;
 			}
-		}
-		if (this.passengers.length === 0) {
-			this.speed = 0;
 		}
 	}
 };
