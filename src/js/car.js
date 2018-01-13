@@ -20,9 +20,11 @@ const car = {
 				this.speed = this.defaultSpeed;
 			} else if (this.maxSpeed < newSpeed) {
 				this.speed = this.maxSpeed;
+			} else {
+				this.speed = newSpeed;
 			}
-			this.speed = newSpeed;
-		} else {
+		}
+		if (this.passengers.length === 0) {
 			this.speed = 0;
 		}
 	}
